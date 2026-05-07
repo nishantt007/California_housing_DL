@@ -14,6 +14,24 @@ This project implements a **Wide & Deep regression network** using the Keras Fun
 - Dual-input split: wide path (features 0–4) and deep path (features 2–7)
 - Auxiliary output with weighted loss for improved gradient flow
 - ModelCheckpoint callback to persist the best epoch automatically
+- EarlyStopping callback with best-weight restoration to prevent overfitting
+
+---
+
+## Tech Stack
+
+| Category | Tool / Library |
+|----------|----------------|
+| Language | Python 3.x |
+| Deep learning framework | TensorFlow 2.x, Keras (bundled) |
+| Data preprocessing | scikit-learn |
+| Notebook environment | Jupyter Notebook |
+
+---
+
+> **Note:** The trained model is saved to `my_keras_model.h5` in the working directory at runtime.
+
+---
 
 ## Installation
 
