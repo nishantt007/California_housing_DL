@@ -1,4 +1,4 @@
-# California Housing Price Predictor — Deep Learning
+# California Housing Price Predictor using Deep Learning
 
 > Wide & Deep neural network with multi-input/multi-output architecture for predicting California district median house values using TensorFlow/Keras.
 
@@ -40,3 +40,25 @@ This project implements a **Wide & Deep regression network** using the Keras Fun
 - Python 3.8 or higher
 - pip or conda
 - Jupyter Notebook or JupyterLab
+
+### Dependency Installation
+
+```bash
+pip install tensorflow scikit-learn notebook
+```
+
+Or with conda:
+
+```bash
+conda install -c conda-forge tensorflow scikit-learn notebook
+```
+
+### Environment Setup (recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate       # Linux/macOS
+venv\Scripts\activate          # Windows
+
+pip install tensorflow scikit-learn notebook
+```
