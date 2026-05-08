@@ -69,3 +69,18 @@ venv\Scripts\activate          # Windows
 
 pip install tensorflow scikit-learn notebook
 ```
+
+## Architecture
+
+```
+         wide_input [5 features: 0–4]          deep_input [6 features: 2–7]
+                │                                        │
+                │                              Dense(50, relu) → hidden_1
+                │                              Dense(40, relu) → hidden_2
+                │                                        │
+                └──────────── concatenate ───────────────┘
+                                    │
+                            Dense(1) → output (primary)
+                                    │
+                        hidden_2 → Dense(1) → aux_output (auxiliary)
+```
