@@ -33,6 +33,13 @@ This project implements a **Wide & Deep regression network** using the Keras Fun
 
 ---
 
+**Loss configuration:**
+
+| Output | Loss | Weight |
+|--------|------|--------|
+| `output` (primary) | MSE | 0.9 |
+| `aux_output` (auxiliary) | MSE | 0.1 |
+
 ## Installation
 
 ### Prerequisites
